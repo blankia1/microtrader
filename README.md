@@ -12,7 +12,7 @@ brew install packer
 
 # The customised AMI has the docker network interface removed because it is using "Host Networking". Having the default docker interface can intervene with the HOST Networking mode. Default Docker interface is best used for bridge networking.
 docker run -it  --rm  --net=host alphine ifconfig
-
+# Above is done in the firstrun.sh script in packer_ecs projects
 
 # Docker in Production using AWS - Microtrader Application
 
