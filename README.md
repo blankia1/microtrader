@@ -44,7 +44,17 @@ The application demonstrates several key features of a Microservices architectur
 
 Before building and running the application locally, your system must have the following prerequisites installed:
 
-- Java JDK 8
+- Java JDK 8 ->
+Download latest jdk https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+scp it into server
+mv jdk-8u221-linux-x64.tar.gz /opt/
+tar xzf jdk-8u221-linux-x64.tar.gz
+
+# vi ~/.bashrc
+export JAVA_HOME=/opt/jdk1.8.0_221
+export JRE_HOME=/opt/jdk1.8.0_221/jre
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+
 - NodeJS 4.x or higher (to install the `npm` package manager)
 - Bower (`npm install -g bower`)
 
