@@ -4,7 +4,7 @@ include .env
 
 # Project variables
 PROJECT_NAME ?= microtrader
-ORG_NAME ?= dockerproductionaws
+ORG_NAME ?= blankia
 REPO_NAME ?= microtrader
 TEST_REPO_NAME ?= microtrader-dev
 TEST_DIR ?= build/test-results/junit/
