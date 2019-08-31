@@ -10,6 +10,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/i
 # Make customised AWS AMI with packer
 brew install packer
 
+# The customised AMI has the docker network interface removed because it is using "Host Networking". Having the default docker interface can intervene with the HOST Networking mode. Default Docker interface is best used for bridge networking.
+docker run -it  --rm  --net=host alphine ifconfig
+
+
 # Docker in Production using AWS - Microtrader Application
 
 This is the sample application for the Pluralsight course Docker in Production using AWS.
