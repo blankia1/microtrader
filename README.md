@@ -1,3 +1,8 @@
+# Export env variables in the host
+export DOCKER_USER=
+export DOCKER_PASS=
+
+
 # Docker in Production using AWS - Microtrader Application
 
 This is the sample application for the Pluralsight course Docker in Production using AWS.
