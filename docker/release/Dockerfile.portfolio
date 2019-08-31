@@ -1,4 +1,4 @@
-FROM dockerproductionaws/microtrader-base
+FROM blankia/microtrader-base
 MAINTAINER Justin Menga <justin.menga@gmail.com>
 LABEL application.component=microtrader-portfolio
 
