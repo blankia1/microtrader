@@ -2,6 +2,9 @@
 export DOCKER_USER=
 export DOCKER_PASS=
 
+# Install jq (used by packer script)
+sudo yum install jq -y
+
 # Install brew
 # Need to be ec2-user
 vi ~/.bashrc ->  PATH=/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/current/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
