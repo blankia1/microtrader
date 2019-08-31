@@ -2,6 +2,13 @@
 export DOCKER_USER=
 export DOCKER_PASS=
 
+# Install brew
+# Need to be ec2-user
+vi ~/.bashrc ->  PATH=/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/vendor/portable-ruby/current/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+
+# Make customised AWS AMI with packer
+brew install packer
 
 # Docker in Production using AWS - Microtrader Application
 
